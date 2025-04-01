@@ -1,0 +1,22 @@
+name: trRNA
+channels:
+  #  uncomment the four lines below if you are located in China
+#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/conda-forge/
+#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/cloud/pytorch/
+#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/main/
+#  - https://mirrors.tuna.tsinghua.edu.cn/anaconda/pkgs/free/
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - cudatoolkit=10.2
+  - numpy
+  - python=3.8
+  - pytorch=1.11.0=py3.8_cuda10.2_cudnn7.6.5_0
+  - torchaudio=0.11.0=py38_cu102
+  - torchvision=0.12.0=py38_cu102
+  - tqdm
+  - pip
+  - pip:
+      - einops

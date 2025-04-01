@@ -1,0 +1,34 @@
+# Instructions for training the neural network (RNAformer) in trRosettaRNA.
+
+
+##Requirements
+====
+
+* [Python (>= 3.8)](https://www.python.org/downloads)
+* [Pytorch (>=1.10)](https://pytorch.org/)
+* [Einops](https://github.com/arogozhnikov/einops)
+* [NPZ files storing the training set](https://yanglab.qd.sdu.edu.cn/trRosettaRNA/benchmark/training_npzs_light.tar.bz2)
+
+
+##Usage
+====
+
+### Download the training set.
+  
+Before initiating training, make sure to download the LMDB files for the training set:
+```
+cd materials/
+wget https://yanglab.qd.sdu.edu.cn/trRosettaRNA/benchmark/training_npzs_light.tar.bz2 --no-check-certificate
+tar -xjvf training_npzs_light.tar.bz2/
+cd ../
+```
+
+### Perform training.
+
+For example, if you want to perform training on GPU card #0 and save the trained model to `output/`:
+```
+python train.py materials/npz_3633 output/ -gpu 0
+```
+This script encompasses an early-stopping schedule, selecting the model with the highest validation C3' distance accuracy.
+Here, the distance accuracy is defined as the Pearson's correlation coefficient (r) between the predicted and native distance maps.
+
