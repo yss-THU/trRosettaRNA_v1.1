@@ -1,0 +1,120 @@
+nohup: ignoring input
+2024-01-24 12:27:21.895352: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+>> Opening FASTA file...
+>> Converting FASTA file from multiline to single line and writing to file.
+>> Done!
+
+Preparing tfr records file for SPOT-RNA:
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:00<00:00, 128.55it/s]2024-01-24 12:27:24.532599: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN) to use the following CPU instructions in performance-critical operations:  AVX512F
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-01-24 12:27:24.701416: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-24 12:27:24.703225: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcuda.so.1
+2024-01-24 12:27:24.805482: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-01-24 12:27:24.805569: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-01-24 12:27:24.813496: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-01-24 12:27:24.813653: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-01-24 12:27:24.815511: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-24 12:27:24.820042: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-24 12:27:24.820324: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi413/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib::/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/home/wangwk/cuda-11.3/lib64:/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/data/apps/diplib3.4/lib:/home/wangwk/cuda-11.3/lib64
+2024-01-24 12:27:24.821973: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-01-24 12:27:24.822295: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-01-24 12:27:24.822315: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-24 12:27:25.196116: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-24 12:27:25.196232: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-01-24 12:27:25.196246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+2024-01-24 12:27:27.703820: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:196] None of the MLIR optimization passes are enabled (registered 0 passes)
+2024-01-24 12:27:27.979905: I tensorflow/core/platform/profile_utils/cpu_utils.cc:112] CPU Frequency: 2400000000 Hz
+2024-01-24 12:27:28.400302: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:116] None of the MLIR optimization passes are enabled (registered 2)
+
+
+Predicting for SPOT-RNA model 0
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.33s/it]100%|██████████| 1/1 [00:01<00:00,  1.34s/it]2024-01-24 12:27:29.883131: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-24 12:27:29.885270: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-01-24 12:27:29.885382: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-01-24 12:27:29.885508: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-01-24 12:27:29.885529: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-01-24 12:27:29.885548: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-24 12:27:29.885565: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-24 12:27:29.885894: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi413/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib::/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/home/wangwk/cuda-11.3/lib64:/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/data/apps/diplib3.4/lib:/home/wangwk/cuda-11.3/lib64
+2024-01-24 12:27:29.885984: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-01-24 12:27:29.886006: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-01-24 12:27:29.886020: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-24 12:27:29.886054: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-24 12:27:29.886065: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-01-24 12:27:29.886077: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+
+
+Predicting for SPOT-RNA model 1
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:01<00:00,  1.50s/it]100%|██████████| 1/1 [00:01<00:00,  1.50s/it]2024-01-24 12:27:35.974787: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-24 12:27:35.976627: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-01-24 12:27:35.976694: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-01-24 12:27:35.976801: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-01-24 12:27:35.976816: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-01-24 12:27:35.976831: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-24 12:27:35.976864: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-24 12:27:35.977086: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi413/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib::/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/home/wangwk/cuda-11.3/lib64:/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/data/apps/diplib3.4/lib:/home/wangwk/cuda-11.3/lib64
+2024-01-24 12:27:35.977114: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-01-24 12:27:35.977129: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-01-24 12:27:35.977139: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-24 12:27:35.977170: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-24 12:27:35.977179: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-01-24 12:27:35.977187: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+
+
+Predicting for SPOT-RNA model 2
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:02<00:00,  2.28s/it]100%|██████████| 1/1 [00:02<00:00,  2.29s/it]2024-01-24 12:27:45.092112: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-24 12:27:45.094552: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-01-24 12:27:45.094655: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-01-24 12:27:45.094796: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-01-24 12:27:45.094826: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-01-24 12:27:45.094848: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-24 12:27:45.094871: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-24 12:27:45.095167: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi413/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib::/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/home/wangwk/cuda-11.3/lib64:/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/data/apps/diplib3.4/lib:/home/wangwk/cuda-11.3/lib64
+2024-01-24 12:27:45.095239: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-01-24 12:27:45.095259: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-01-24 12:27:45.095272: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-24 12:27:45.095328: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-24 12:27:45.095340: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-01-24 12:27:45.095350: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+
+
+Predicting for SPOT-RNA model 3
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.55s/it]100%|██████████| 1/1 [00:03<00:00,  3.56s/it]2024-01-24 12:27:58.377284: I tensorflow/compiler/jit/xla_gpu_device.cc:99] Not creating XLA devices, tf_xla_enable_xla_devices not set
+2024-01-24 12:27:58.379541: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1720] Found device 0 with properties: 
+pciBusID: 0000:17:00.0 name: A100-PCIE-40GB computeCapability: 8.0
+coreClock: 1.41GHz coreCount: 108 deviceMemorySize: 39.59GiB deviceMemoryBandwidth: 1.41TiB/s
+2024-01-24 12:27:58.379617: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudart.so.11.0
+2024-01-24 12:27:58.379856: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublas.so.11
+2024-01-24 12:27:58.379886: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcublasLt.so.11
+2024-01-24 12:27:58.379909: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcufft.so.10
+2024-01-24 12:27:58.379931: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcurand.so.10
+2024-01-24 12:27:58.380218: W tensorflow/stream_executor/platform/default/dso_loader.cc:60] Could not load dynamic library 'libcusolver.so.10'; dlerror: libcusolver.so.10: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/openmpi413/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib:/usr/lib:/lib64:/usr/local/lib:/usr/local/lib64:/lib::/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/home/wangwk/cuda-11.3/lib64:/usr/local/cuda-11.1/lib64:/data/apps/relion-4.0.0/lib:/usr/local/bsoft/lib:/data/apps/diplib3.4/lib:/home/wangwk/cuda-11.3/lib64
+2024-01-24 12:27:58.380250: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcusparse.so.11
+2024-01-24 12:27:58.380269: I tensorflow/stream_executor/platform/default/dso_loader.cc:49] Successfully opened dynamic library libcudnn.so.8
+2024-01-24 12:27:58.380281: W tensorflow/core/common_runtime/gpu/gpu_device.cc:1757] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+2024-01-24 12:27:58.380312: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1261] Device interconnect StreamExecutor with strength 1 edge matrix:
+2024-01-24 12:27:58.380323: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1267]      0 
+2024-01-24 12:27:58.380333: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1280] 0:   N 
+
+
+Predicting for SPOT-RNA model 4
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.91s/it]100%|██████████| 1/1 [00:04<00:00,  4.91s/it]
+
+Post Processing and Saving Output
+
+Finished!
+
+Processsing Time 48.67557382583618 seconds
